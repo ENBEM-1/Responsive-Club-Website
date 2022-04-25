@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+        <link rel="manifest" href="resources/favicon/site.webmanifest">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" type="text/css">
+
+        <link rel="stylesheet" href="resources/styles/reset.css" type="text/css">
+        <link rel="stylesheet" href="resources/styles/styles.css" type="text/css">
+
+        <title>Life Goes On</title>
+    </head>
+    <body>
+        <main id="welcome">
+            <div class="jumbotron-image"></div>
+            <header>
+                <h1>Life Goes On</h1>
+                <p>.....regardless of your situation.</p>
+            </header>
+            <button onclick="welcomeAway()" id="welcome-away" class="welcome-away">Discover Us &#9654;</button>
+        </main>
+        <main id="content" hidden>
+            <nav>
+                <a href="#events">Events</a>
+                <a href="#history">About</a>
+                <a href="#join">Become a member</a>
+            </nav>
+            <section id="events">
+                <h1>Upcoming events</h1>
+                <div class="calendar">
+                    <div class="month">
+                        <ul>
+                          <li>May<br><span style="font-size:18px">2022</span></li>
+                        </ul>
+                      </div>
+                      
+                      <ul class="weekdays">
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                        <li>Sun</li>
+                      </ul>
+                      
+                      <ul class="days">
+                        <li>1</li>
+                        <li>Eyes Balls's Birthday</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>Party In the Hills</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span class="active">10</span></li>
+                        <li>11</li>
+                        <li>Orphanage Outreach</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>Mid-Year Meeting</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>Wedding</li>
+                        <li>23</li>
+                        <li>Black Boy's Birthday</li>
+                        <li>25</li>
+                        <li>Funeral</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                      </ul>
+                </div>
+            </section>
+            <section id="history">
+                <h1>Management</h1>
+                <div class="founder-card">
+                    <h4>Mufasa_The Lion King</h4>
+                    <img src="resources/media/King mufasa.jpg" alt="The founder of the LGO">
+                    <p>King Mufasa put his heart and soul into Society. One of the good people in history, this man set the bar for people skills. No one can compete with him, but we can learn from his ways.</p>
+                    <p id="pb-date">Long Live The King</p>
+                </div>
+            </section>
+            <section id="join">
+                <h1>Become a Member</h1>
+                <form action="get">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="King Mufasa" name="name" id="name" required>
+                    <br>
+                    <label for="age">Age:</label>
+                    <input type="number" placeholder="Really Old" min="18" id="age" required>
+                    <br>
+                    <label for="under-18">I'm Under 18</label>
+                    <input type="checkbox" name="under-18" id="under-18">
+
+                    <hr>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" placeholder="(xxx) xxx-xxxx" name="phone" id="phone">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="email@example.com" name="email" id="email">
+                    <br>
+                    <label for="newsletter">I would like to recieve a monthly newsletter by email</label>
+                    <input type="checkbox" checked name="newsletter" id="newsletter">
+                    <br>
+                    <button type="reset">Make me a Member</button>
+                </form>
+            </section>
+            <footer>
+                <a href="#events">Events</a>
+                <a href="#history">History</a>
+                <a href="#join">Become a member</a>
+                <address>Phone: (+233) 200-557455</address>
+            </footer>
+        </main>
+
+        <script src="resources/scripts/script.js"></script>
+    </body>
+</html>
